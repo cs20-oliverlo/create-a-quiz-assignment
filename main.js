@@ -35,31 +35,47 @@ function markQuestion(qNum, qAnswer) {
     // Tests question number and answer (also outputs individual feedback per question)
     if (qNum == 1) {
         if (qAnswer == "omega") {
-            document.getElementById("result1").innerHTML = "Correct!"
+            document.getElementById("result1").innerHTML = "Correct!";
+            document.getElementById("result1").style.color = "lime";
+            document.getElementById("q1-in").style.borderBlockColor = "lime";
             return 1;
         } else {
-            document.getElementById("result1").innerHTML = "Incorrect."
+            document.getElementById("result1").innerHTML = "Incorrect.";
+            document.getElementById("result1").style.color = "red";
+            document.getElementById("q1-in").style.borderBlockColor = "red";
         }
     } else if (qNum == 2) {
         if (qAnswer == "laughter") {
-            document.getElementById("result2").innerHTML = "Correct!"
+            document.getElementById("result2").innerHTML = "Correct!";
+            document.getElementById("result2").style.color = "lime";
+            document.getElementById("q2-in").style.borderBlockColor = "lime";
             return 1;
         } else {
-            document.getElementById("result2").innerHTML = "Incorrect."
+            document.getElementById("result2").innerHTML = "Incorrect.";
+            document.getElementById("result2").style.color = "red";
+            document.getElementById("q2-in").style.borderBlockColor = "red";
         }
     } else if (qNum == 3) {
         if (qAnswer == "oxymoron") {
-            document.getElementById("result3").innerHTML = "Correct!"
+            document.getElementById("result3").innerHTML = "Correct!";
+            document.getElementById("result3").style.color = "lime";
+            document.getElementById("q3-in").style.borderBlockColor = "lime";
             return 1;
         } else {
-            document.getElementById("result3").innerHTML = "Incorrect."
+            document.getElementById("result3").innerHTML = "Incorrect.";
+            document.getElementById("result3").style.color = "red";
+            document.getElementById("q3-in").style.borderBlockColor = "red";
         }
     } else {
         if (qAnswer == "tanzanite") {
-            document.getElementById("result4").innerHTML = "Correct!"
+            document.getElementById("result4").innerHTML = "Correct!";
+            document.getElementById("result4").style.color = "lime";
+            document.getElementById("q4-in").style.borderBlockColor = "lime";
             return 1;
         } else {
-            document.getElementById("result4").innerHTML = "Incorrect."
+            document.getElementById("result4").innerHTML = "Incorrect.";
+            document.getElementById("result4").style.color = "red";
+            document.getElementById("q4-in").style.borderBlockColor = "red";
         }
     }
     return 0;
